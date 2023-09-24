@@ -32,14 +32,11 @@ jobs:
       working-directory: ./frontend
     - run: ./post-build.sh
       working-directory: ./frontend
-    - name: Push generated webpage to another repository
-      uses: nkoppel/push-files-to-another-repository@v1.1.1
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.3
       with:
-        source-files: 'frontend/dist/chat.html frontend/dist/assets' 
-        destination-username: 'dhiman1987'
-        destination-repository: 'dhiman1987.github.io'
-        commit-email: 'dhiman.talapatra@gmail.com'
+        name: front-end-artifact
+        path: ./frontend/dist
+
 
     
