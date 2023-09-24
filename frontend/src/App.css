@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--heading-text);
+}
+
+.yourMessageBox{
+  text-align: right;  
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: var(--dark-text);
+  border-radius: 10px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 5em; 
+  margin-right: 2em; 
+}
+
+.messageBox{
+  text-align: left;
+  padding: 1em;
+  background-color: var(--primary-background);
+  border-radius: 10px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-right: 4em; 
+  margin-left: 1em; 
+}
+
+.messageArea{
+  height:40em;
+  overflow-x: scroll;
+}
+
+.chatWidget{
+  margin: 0;
+  width:100%;
+  padding: 0;
+}
+
+.chatInput{
+  display:flex;
+  justify-content: space-between;
+}
+.buttonGroup{
+  display: flex;
+  flex-basis: 10%;
+  flex-direction: column;
+}
+.chatInputArea{
+  flex-basis: 90%;
+}
+
+.chatInputText{
+  padding: 0.6em;
+  height: 4em;
+  font-size: 1em;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--heading-text);
+  border: 1.5px solid var(--primary-color-dark);
+  border-radius: 5px;
+  background-color: var(--primary-background);
+  outline: none;
+  margin-top: 0.3em;
+  width:92%
+}
+
+.mainButton{
+margin: 0.25em;
+padding: 0.75em;
+border-radius: 5px;
+background-color: var(--primary-color);
+color: #fff;
+border:none;
+font-weight: bold;
+cursor: pointer;
+}
+
+.mainButton:hover{
+  background-color: var(--primary-color-dark);
+}
+
+.secondaryButton{
+  margin: 0.25em;
+  padding: 0.75em;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border:none;
+  font-weight: bold;
+  cursor: pointer;
+  }
+
+  .secondaryButton:hover{
+    background-color: var(--secondary-color-dark);
+  }
+
+  .bulletClass::before {
+    content: "•";
+    margin-left: 0.5em;
+  }
+
+  .hiHand{
+    font-size: 1.5em;
+  }
