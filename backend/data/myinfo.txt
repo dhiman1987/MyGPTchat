@@ -1,0 +1,119 @@
+Dhiman Talapatra
++41 779219385 | +91 9874380099 | dhiman.talapatra@gmail.com | https://www.dhimantalapatra.com | https://www.linkedin.com/in/dhiman-talapatra | https://github.com/dhiman1987
+
+Introduction
+Dhiman is a Solution Architect having a background of Full Stack Engineer with Cloud Development experience. He has 13+ years of industry experience in delivering solutions for the Banking and Telecom Domain across multiple technologies including CI/CD, UX, Cloud Technologies. AWS Developer Associate, CSM Scrum Master certified, having experience in managing and collaborating with various teams to deliver solutions on time. He also has keen interests in the latest technological trends like AI and Machine Learning. Has a passion toward cross platform mobile development, with Flutter being the primary framework of interest.
+
+Unique Selling Point
+Dhiman believes in delivering solutions end to end which is focused on solving a real world problem. He is able to visualize the solution from different angles including UX, performance, security and most importantly cost. Pragmatism being the main mantra of the solution. In his opinion, a solution is meaningless if it cannot be implemented with the budget and timeline
+
+Work Experience.
+From January 2022 to Present day: Worked as Senior Associate at Cognizant Technology Solutions (Zürich).
+Current Roles and Responsibilities
+As Solution Architect, be responsible for providing High and Low level design of software components. Based on microservices architecture using cloud technologies. Keeping in mind security (OWASP) and Compliance (GDPR) aspects in mind.
+As an onsite coordinator, ensure the work is smoothly transferred between onsite and offshore colleagues. Take part in face to face and remote discussion with business stakeholders as well as other teams and vendors.
+From July 2018 to December 2021: Worked as Senior Associate at Cognizant Technology Solutions.
+Roles and Responsibilities
+As a Offshore lead, Deliver green field projects from conceptualize to go live. Be responsible for Maintenance and enhancements of multiple applications.
+From December 2014 to June 2018: Worked as Associate at Cognizant Technology solutions.
+As a Team lead, be responsible for end to end delivery of 5 member team. Coach junior members for upskilling.
+As a Full Stack Developer, implement individual modules across back and front end. Create Wire Frames for GUI upgrade and Angular migration. Work on Migration projects like. CORBA to SOAP Web Service.
+From July 2014 to December 2014: Worked as Lead Engineer at HCL Technologies Limited.
+As a Team lead, be responsible for delivery of enhancements / bug fixes for 3 member team.
+As a Full stack Java Developer, develop enhancements and bug fixes across application layers.
+From October 2012 to June 2014: Worked as Software Engineer at HCL Technologies Limited.
+As a Full stack Java Developer, develop enhancements and bug fixes across application layers.
+As a Selenium automation developer, maintain an automation test suite for an existing enterprise application.
+From February 2011 to October 2012: Worked as Senior Systems Engineer at Infosys Limited.
+As a Java Developer, work on Change Requests for Finacle Banking solution.Including bug fixes for product stabilization.
+From February 2010 to January 2011: Worked as Systems Engineer at Infosys Limited.
+As a Junior Java developer, work on bug fixes for product stabilization.
+
+Strengths
+Cloud: He has Hands on experience with AWS, OpenShift, Firebase cloud solution.Designing and developing various cloud components l ike deployments, routes, services, config maps, secrets etc.Integrating the cloud components with various non-cloud services.
+
+DevOps: He Understands end-to-end application architecture along with its associated components and implementation of CI/CD according to the industry and respective organizational standards. He posses in depth experience in cloud deployments using Jenkins Build pipelines with OpenShift integration and Git-lab Build pipelines with GitHub integration.
+
+Containerization: He is experienced in Containerization of Angular and Spring Boot applications in order to create high availability micro services oriented applications using Docker. Building, Pushing and Deploying images in the cloud is some of the activities he had performed on OpenShift based Kubernetes clusters.
+
+Certified Scrum Master: He has 3+ years experience as scrum master. Provides extensive guidance to ensure the team lives agile values and principles and follows the processes and practices to deliver a successful product.
+
+Requirement Analysis and Design: he has extensive experience to define and lead overall software validation requirements and strategies to ensure that the software fully meets business, technical and operational requirements. Understands business needs and specs out detailed software solutions, develop logical and physical specifications.
+
+JAVA/J2EE Developer: With more than 13 years of J2EE hands-on experience and have in-depth knowledge on best practices for design, development and software release, he is a solid in java development. He ensures that the team develops software using disciplined software development processes, adhering to team/company standards and software best practice guidelines and policies. He has produced and consumed SOAP and REST Web services while development and integration testing is a profound competence.
+
+Front-end Developer: He has hands on experience in client-side frameworks like Angular, ReactJS with web application development and modernization initiatives for large-scale applications. He can evaluate, test, troubleshoot, upgrade and develop GUI applications.
+
+Application Maintenance: He has Assisted in troubleshooting applications systems, performance and environmental concerns. Performed  post-implementation validation of software, debug and resolve any bugs found during testing. He is proactive in reaching out to the stakeholders and higher management in case of escalations and any design fault.
+
+Alignment to Industry trends: He is committed to maintain innovative technical skills and up-to-date industry knowledge to continuously improve on the latest technology and processes.
+
+Change Management: He can be considered as an exemplary change agent with ability to analyze issues, devise continuous improvements and accelerate strategic measures to strengthen performance and reduce operational cost.
+
+Collaboration: He is an articulated communicator with strong interpersonal skills, skilled at collaborating with stakeholders, project teams, product owners. He meets up with the stakeholders and gathers the requirements to succeed the planning with various Product Owners to ensure the capabilities of the backlog arw met and provide input for the successful release of the requied software.
+
+Relevant Project Experience:
+Cloud: Hands on experience with AWS, OpenShift, Firebase cloud solution. Designing and developing various cloud components like deployments, routes, services, config maps, secrets etc. Integrating the cloud components with various non-cloud services.
+
+DevOps: Understanding end-to-end application architecture along with its associated components and implementation of CI/CD according to the industry and respective organizational standards. In depth experience in cloud deployments using Jenkins Build pipelines with OpenShift integration and Git-lab Build pipelines with GitHub integration.
+
+Containerization: Experienced in Containerization of Angular and Spring Boot applications in order to create high availability micro services oriented applications using Docker.Building, Pushing and Deploying images in the cloud. Worked on OpenShift Kubernetes.
+
+Certified Scrum Master:3+ years experience as scrum master. Provides extensive guidance to ensure the team lives agile values and principles and follows the processes and practices to deliver a successful product.
+
+Requirement Analysis and Design: Extensive experience to define and lead overall software validation requirements and strategies to ensure that the software fully meets business, technical and operational requirements. Understand business needs and specs out detailed software solutions, develop logical and physical specifications.
+
+JAVA/J2EE Developer: More than 13 years of J2EE hands-on experience. Have in-depth knowledge on best practices for design, development and software release. Ensures that the team develops software using disciplined software development processes, adhering to team/company standards and software best practice guidelines and policies. Produced and consumed SOAP and REST Web services while development and integration testing is a profound competence.
+
+Front-end Developer: Hands on experience in client-side frameworks like Angular with web application development and modernization initiatives for large-scale applications. Evaluate, test, troubleshoot, upgrade and develop GUI applications software.
+
+Application Maintenance: Assists in troubleshooting applications systems, performance and environmental concerns. Perform post-implementation validation of software, debug and resolve any bugs found during testing. He is proactive in reaching the stakeholders and higher management in case of escalations and any design fault.
+
+Alignment to Industry trends: Committed to maintain innovative technical skills and up-to-date industry knowledge to continuously improve on the latest technology and processes.
+
+Change Management: Exemplary change agent with ability to analyze issues, devise continuous improvements and accelerate strategic measures to strengthen performance and reduce operational cost.
+
+Collaboration: Articulate communicator with strong interpersonal skills, skilled at collaborating with stakeholders, project teams, product owners. meet up with the stakeholders and gather the requirements to succeed the planning with various Product Owners to ensure the capability of the backlog and provide input for the successful releases.
+
+Certifications
+Azure Certification: Completed in Nov 2022. Below are the services that are used.
+Azure basics, Lambda, VMs, Kubernetes, API gateway, Queues etc
+
+AWS Certified Developer - Associate (DVA): Completed in Nov, 2020
+Amazon Simple Queue Service, Amazon DynamoDB, Amazon ElastiCache, Amazon Kinesis, AWS Lambda, Amazon API Gateway, AWS Elastic Beanstalk, AWS Identity and Access Management, AWS Key Management Service
+
+CSM Certified Scrum Master: Completed in June 2019. Below are the topips that were covered.
+Agile Methodology, Roles and responsibilities of scrum master, Various SCRUM parameters and measures, SCRUM ceremonies
+
+Knowledge Stalwarts: Received on Mar 2019 as a Recognition of excellence in training and consistent high feedback from training participants.
+
+Full Stack Engineer certificaton: Completed in Oct 2018. Below are the topics that are covered.
+Angular (Angular material), Docker, Spring Boot (Secure REST PI with token based authentication), MySQL
+
+Hadoop and BIG data: Completed on Jul 2014. Below are the topics that were covered.
+Concepts of Hadoop Distributed File System and MapReduce, Setup a Hadoop Cluster
+Understand Data Loading Techniques using Sqoop and Flume, Perform Data Analytics using Pig and Hive
+Work on a Real Life Project on Big Data Analytics and gain Hands on Project Experience
+
+Software Skills.
+Cloud: AWS, OpenShift3, Heroku, Firebase
+DevOps: Jenkins, Git-Lab CI/CD, Heroku Pipeline
+Containerization: Docker, Kubernetes
+Programming Languages: Java, Python, Typescript, Kotlin, Unix Shell Script
+Backend Frameworks: Spring, JSF, Struts, Hibernate, JPA
+Frontend Frameworks: Angular Bootstrap CSS
+Mobile Technologies: Flutter, Android, PWA
+
+Education qualifications.
+Bachelors of Technology (B.Tech) in Electronics & Instrumentation from Guru Nanak Institute of Technology, Sodepur (2005 - 2009).
+Senior Secondary education in Science (10+2) from ST Xavier's Institution, Panihati (2003 - 2005).
+Secondary education (10) from Douglas Memorial High School, Barrackpore (Completed in 2003).
+
+Personal Information.
+Dhiman was Born on 30th April 1987 at Barrackpore, Kolkata 700122, West Bengal India.
+Mother tongue is Bengali and primary language of education and work is English.
+Can speak and write Hindi.
+Residing in Talackerstrasse 49, Glattburgg 8152, Zurich as of 2022 and trying to learn German in spare time.
+
+Hobbies and Interests.
+In his free time, he explores the world of art, with a recent interest in cartoons. He enjoys painting and participates in community art events. He also watches short videos of artists during casual browsing sessions. Music, especially guitar, used to fill his college days. Now, family time with his two kids is a priority, but he hopes to play the guitar again someday.

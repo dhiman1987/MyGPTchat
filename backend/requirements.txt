@@ -1,0 +1,8 @@
+Flask==2.3.3
+flask_cors==4.0.0
+langchain==0.0.278
+openai==0.27.8
+chromadb==0.4.3
+tiktoken==0.4.0
+awslambdaric==2.0.7
+boto3==1.28.37

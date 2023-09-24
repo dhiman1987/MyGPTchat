@@ -1,3 +1,5 @@
 frontend/dist/**
 frontend/node_modules/**
+backend/persist/**
+backend/build.sh
 *.DS_Store
