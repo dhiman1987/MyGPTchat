@@ -61,8 +61,9 @@ jobs:
         ECR_REGISTRY: 960375303011.dkr.ecr.ap-south-1.amazonaws.com
         ECR_REPOSITORY: mychat-aws-lambda-x86
         IMAGE_TAG: github-action
+      working-directory: ./backend
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f ./backend/Dockerfile .
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
 
