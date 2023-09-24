@@ -27,7 +27,7 @@ vector_store_sqllite_path=vector_store_path+'/chroma.sqlite3'
 aws_secret_openai_api_key='openai-api-key'
 vector_store_s3_path="s3://"+bucket_name+"/"+vector_store_path
 
-print("Initializing......change 3")
+print("Initializing......change 4")
 session = boto3.session.Session()
 print("Boto3 Session created")
 secret_client = session.client(service_name='secretsmanager',region_name=region_name)
