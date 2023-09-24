@@ -32,3 +32,14 @@ jobs:
       working-directory: ./frontend
     - run: ./post-build.sh
       working-directory: ./frontend
+    - name: Push generated webpage to another repository
+      uses: nkoppel/push-files-to-another-repository@1.1.0
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source-files: 'frontend/dist/chat.html frontend/dist/assets' 
+        destination-username: 'dhiman1987'
+        destination-repository: 'dhiman1987.github.io'
+        commit-email: 'dhiman.talapatra@gmail.com'
+
+    
