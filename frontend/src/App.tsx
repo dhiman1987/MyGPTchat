@@ -1,8 +1,14 @@
-import {useEffect, useState, useRef, createRef} from 'react'
-import './App.css'
-import Loader from './Loader/Loader'
-import axios from 'axios'
+import {useEffect, useState, useRef, createRef} from 'react';
+import './App.css';
+import Loader from './Loader/Loader';
+import axios from 'axios';
 import {v4 as uuidv4} from 'uuid';
+
+import awsIcon from './assets/aws-icon.svg';
+import chainIcon from './assets/chain-icon.svg';
+import openaiIcon from './assets/openai-icon.svg';
+import pythonIcon from './assets/python-icon.svg';
+import reactjsIcon from './assets/reactjs-icon.svg';
 
 //const apiBaseUrl = "http://127.0.0.1:5000";
 const apiBaseUrl = "https://fhuzbqxjca.execute-api.ap-south-1.amazonaws.com";
@@ -29,11 +35,11 @@ interface ChatInput {
 const App = () => {
     const defaultMessage: Message = {
         id: "",
-        messageText: "You can ask a question about 🤓 me. It is certainly more fun 🥳 than my static website."+
-        "\n Below are some example questions -"+
-        "\n\t Introduce yourself?"+
+        messageText: "What will you like to know today! 🤓 It is certainly more fun 🥳 than the static website."+
+        "\n Why don't you start with something like -"+
+        "\n\t Introduce Dhiman?"+
         "\n\t Is he a solution architect?"+
-        "\n\t Why should you be considered as a good software professional?"+
+        "\n\t Why should he be considered as a good software professional?"+
         "\n\t List his software skills in bullet points"+
         "\n\t How can I contact him? "+
         "\n You can ask even more 🥸 complex 🥸 questions. "+
@@ -207,25 +213,26 @@ const App = () => {
         <>
             <h1>Hi, Dhiman here!<span className='hiHand'> 👋</span></h1>
             <h3>I am a Full Stack Developer</h3>
+            <p>This is my Bot, you can as it questions about me. It is powered by -</p>
             <div className='iconBar'>
                 <div className='top-icon-wrapper'>
-                    <img src='src/assets/reactjs-icon.svg' alt="reactjs icon" className='top-icon'></img>
+                    <img src={reactjsIcon} alt="reactjs icon" className='top-icon'></img>
                     <div className='top-icon-text'>React</div>
                 </div>
                 <div className='top-icon-wrapper'>
-                    <img src='src/assets/python-icon.svg' alt="python icon" className='top-icon'></img>
+                    <img src={pythonIcon} alt="python icon" className='top-icon'></img>
                     <div className='top-icon-text'>Python</div>
                 </div>
                 <div className='top-icon-wrapper'>
-                    <img src='src/assets/openai-icon.svg' alt="openai icon" className='top-icon'></img>
+                    <img src={openaiIcon}  alt="openai icon" className='top-icon'></img>
                     <div className='top-icon-text'>OpenAI</div>
                 </div>
                 <div className='top-icon-wrapper'>
-                    <img src='src/assets/aws-icon.svg' alt="aws icon" className='top-icon'></img>
+                    <img src={awsIcon}  alt="aws icon" className='top-icon'></img>
                     <div className='top-icon-text'>Lambda</div>
                 </div>
                 <div className='top-icon-wrapper'>
-                    <img src='src/assets/chain-icon.svg' alt="lang chain icon" className='top-icon'></img>
+                    <img src={chainIcon}  alt="lang chain icon" className='top-icon'></img>
                     <div className='top-icon-text'>LangChain</div>
                 </div>
             </div>
@@ -248,7 +255,7 @@ const App = () => {
 
                 {(!loading && <div className="chatInput">
                 <div className='chatInputArea'>
-                        <textarea className="chatInputText" placeholder="Ask a question about me..."
+                        <textarea className="chatInputText" placeholder="Ask a question ..."
                             value={newMessageText}
                             onChange={
                                 event => setNewMessageText(event.target.value)
