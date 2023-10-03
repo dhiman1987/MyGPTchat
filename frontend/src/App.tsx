@@ -30,11 +30,16 @@ const App = () => {
     const defaultMessage: Message = {
         id: "",
         messageText: "You can ask a question about 🤓 me. It is certainly more fun 🥳 than my static website."+
-        "\n You can ask questions like "+
-        "\n\t Who is Dhiman?"+
+        "\n Below are some example questions -"+
+        "\n\t Introduce yourself?"+
         "\n\t Is he a solution architect?"+
+        "\n\t Why should you be considered as a good software professional?"+
         "\n\t List his software skills in bullet points"+
-        "\n\t How can I contact him?",
+        "\n\t How can I contact him? "+
+        "\n You can ask even more 🥸 complex 🥸 questions. "+
+        "Refine it by asking to make the answer more concise or elaborate"+
+        "\n 🫣 I am not pefect and make mistakes 😵. Incase you are not getting the correct answer, "+
+        "trying to reset the conversation sometimes help",
         isUserInput: false,
         messageSentOn: Date.now()
     }
@@ -200,9 +205,30 @@ const App = () => {
 
     return (
         <>
-            <h1>Hi, Dhiman here!<span className='hiHand'> 👋</span>
-            </h1>
-            <h3>I am a Full Stack Developer.</h3>
+            <h1>Hi, Dhiman here!<span className='hiHand'> 👋</span></h1>
+            <h3>I am a Full Stack Developer</h3>
+            <div className='iconBar'>
+                <div className='top-icon-wrapper'>
+                    <img src='src/assets/reactjs-icon.svg' alt="reactjs icon" className='top-icon'></img>
+                    <div className='top-icon-text'>React</div>
+                </div>
+                <div className='top-icon-wrapper'>
+                    <img src='src/assets/python-icon.svg' alt="python icon" className='top-icon'></img>
+                    <div className='top-icon-text'>Python</div>
+                </div>
+                <div className='top-icon-wrapper'>
+                    <img src='src/assets/openai-icon.svg' alt="openai icon" className='top-icon'></img>
+                    <div className='top-icon-text'>OpenAI</div>
+                </div>
+                <div className='top-icon-wrapper'>
+                    <img src='src/assets/aws-icon.svg' alt="aws icon" className='top-icon'></img>
+                    <div className='top-icon-text'>Lambda</div>
+                </div>
+                <div className='top-icon-wrapper'>
+                    <img src='src/assets/chain-icon.svg' alt="lang chain icon" className='top-icon'></img>
+                    <div className='top-icon-text'>LangChain</div>
+                </div>
+            </div>
             <div className="chatWidget">
                 <div className="messageArea">
                     {
