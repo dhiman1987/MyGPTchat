@@ -26,10 +26,7 @@ h1, h2, h3, h4, h5 {
   padding: 1em;
   background-color: var(--primary-background);
   border-radius: 10px;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  margin-right: 4em; 
-  margin-left: 1em; 
+  margin: 1em;
 }
 
 .messageArea{
@@ -108,4 +105,28 @@ cursor: pointer;
 
   .hiHand{
     font-size: 1.5em;
+  }
+
+  .iconBar{
+    color: var(--heading-text);
+    margin: auto;
+    margin-bottom: 1em;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .top-icon-wrapper{
+    text-align: center;
+    margin: 0.5em;
+  }
+  .top-icon{
+    width: 2.25em;
+    height: 2.25em;
+    margin:0.25em;
+    text-align: center;
+  }
+
+  .top-icon-text{
+    margin:0px;
+    font-size: 0.8em;
   }
