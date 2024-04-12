@@ -1,17 +1,14 @@
-import {useEffect, useState, useRef, createRef} from 'react';
-import './App.css';
-import Loader from './Loader/Loader';
-import axios from 'axios';
+import {useEffect, useState, useRef, createRef} from 'react'
+import './App.css'
+import Loader from './Loader/Loader'
+import axios from 'axios'
 import {v4 as uuidv4} from 'uuid';
+import Markdown from 'react-markdown'
 
-import awsIcon from './assets/aws-icon.svg';
-import chainIcon from './assets/chain-icon.svg';
-import openaiIcon from './assets/openai-icon.svg';
-import pythonIcon from './assets/python-icon.svg';
-import reactjsIcon from './assets/reactjs-icon.svg';
-
+//const apiBaseUrl = "http://localhost:8080"
 //const apiBaseUrl = "http://127.0.0.1:5000";
-const apiBaseUrl = "https://fhuzbqxjca.execute-api.ap-south-1.amazonaws.com";
+//const apiBaseUrl = "https://fhuzbqxjca.execute-api.ap-south-1.amazonaws.com";
+const apiBaseUrl = "https://spotty-plantation-production.up.railway.app";
 const queryLimit = 3;
 const debugMode = false;
 interface Message {
@@ -35,17 +32,12 @@ interface ChatInput {
 const App = () => {
     const defaultMessage: Message = {
         id: "",
-        messageText: "What will you like to know today! 🤓 It is certainly more fun 🥳 than the static website."+
-        "\n Why don't you start with something like -"+
-        "\n\t Introduce Dhiman?"+
-        "\n\t Is he a solution architect?"+
-        "\n\t Why should he be considered as a good software professional?"+
-        "\n\t List his software skills in bullet points"+
-        "\n\t How can I contact him? "+
-        "\n You can ask even more 🥸 complex 🥸 questions. "+
-        "Refine it by asking to make the answer more concise or elaborate"+
-        "\n 🫣 I am not pefect and make mistakes 😵. Incase you are not getting the correct answer, "+
-        "trying to reset the conversation sometimes help",
+        messageText: "You can ask a question about 🤓 me. It is certainly more fun 🥳 than my static website."+
+        "\n You can ask questions like "+
+        "\n- Who is Dhiman?"+
+        "\n- Is he a solution architect?"+
+        "\n- List his software skills in bullet points"+
+        "\n- How can I contact him?",
         isUserInput: false,
         messageSentOn: Date.now()
     }
@@ -175,18 +167,6 @@ const App = () => {
         setChatQuery('');
     }
 
-    const parsAndDisplayMessage = (message:string) => {
-        message = message.replaceAll('- ','\n\t')
-        message = message.replaceAll('\n\n','\n\t')
-        const lines = message.split('\n');
-        return lines.map( line => {
-            if(line.startsWith('\t')){
-                return <div className='bulletClass'>{line}</div>
-            }
-            return <div>{line}</div>
-    });
-    }
-
     const isQueryRateInLimit = () => {
         const currentTime = Date.now();
         const questionAsked = messages.filter(m => m.isUserInput && m.messageSentOn > startTime).length;
@@ -211,41 +191,19 @@ const App = () => {
 
     return (
         <>
-            <h1>Hi, Dhiman here!<span className='hiHand'> 👋</span></h1>
-            <h3>I am a Full Stack Developer</h3>
-            <p>This is my Bot, you can as it questions about me. It is powered by -</p>
-            <div className='iconBar'>
-                <div className='top-icon-wrapper'>
-                    <img src={reactjsIcon} alt="reactjs icon" className='top-icon'></img>
-                    <div className='top-icon-text'>React</div>
-                </div>
-                <div className='top-icon-wrapper'>
-                    <img src={pythonIcon} alt="python icon" className='top-icon'></img>
-                    <div className='top-icon-text'>Python</div>
-                </div>
-                <div className='top-icon-wrapper'>
-                    <img src={openaiIcon}  alt="openai icon" className='top-icon'></img>
-                    <div className='top-icon-text'>OpenAI</div>
-                </div>
-                <div className='top-icon-wrapper'>
-                    <img src={awsIcon}  alt="aws icon" className='top-icon'></img>
-                    <div className='top-icon-text'>Lambda</div>
-                </div>
-                <div className='top-icon-wrapper'>
-                    <img src={chainIcon}  alt="lang chain icon" className='top-icon'></img>
-                    <div className='top-icon-text'>LangChain</div>
-                </div>
-            </div>
+            <h1>Hi, Dhiman here!<span className='hiHand'> 👋</span>
+            </h1>
+            <h3>I am a Full Stack Developer.</h3>
             <div className="chatWidget">
                 <div className="messageArea">
                     {
                     messages.map(m => {
                     if (m.isUserInput) {
                         return <div className="yourMessageBox"
-                            key={m.id + ""}>{parsAndDisplayMessage(m.messageText)}</div>
+                           key={m.id + ""}><Markdown>{m.messageText}</Markdown></div>
                     } else {
                         return <div className="messageBox"
-                            key={m.id + ""}>{parsAndDisplayMessage(m.messageText)}</div>
+                           key={m.id + ""}><Markdown>{m.messageText}</Markdown></div>
                 }
 
             })
@@ -255,7 +213,7 @@ const App = () => {
 
                 {(!loading && <div className="chatInput">
                 <div className='chatInputArea'>
-                        <textarea className="chatInputText" placeholder="Ask a question ..."
+                        <textarea className="chatInputText" placeholder="Ask a question about me..."
                             value={newMessageText}
                             onChange={
                                 event => setNewMessageText(event.target.value)
