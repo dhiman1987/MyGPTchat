@@ -4,6 +4,10 @@ import Loader from './Loader/Loader'
 import axios from 'axios'
 import {v4 as uuidv4} from 'uuid';
 import Markdown from 'react-markdown'
+import mascot from './assets/mascot.png'
+import openaiIcon from './assets/openai-icon.svg'
+import reactIcon from './assets/reactjs-icon.svg'
+import springIcon from './assets/spring-icon.svg'
 
 //const apiBaseUrl = "http://localhost:8080"
 //const apiBaseUrl = "http://127.0.0.1:5000";
@@ -32,12 +36,14 @@ interface ChatInput {
 const App = () => {
     const defaultMessage: Message = {
         id: "",
-        messageText: "You can ask a question about 🤓 me. It is certainly more fun 🥳 than my static website."+
-        "\n You can ask questions like "+
+        messageText: "Hi 👋 I am **Bol2** 🤖!"+
+        "\n\n I can answer questions about 🤓 Dhiman. Why don't you start with"+
         "\n- Who is Dhiman?"+
-        "\n- Is he a solution architect?"+
+        "\n- Which companies has he worked for?"+
         "\n- List his software skills in bullet points"+
-        "\n- How can I contact him?",
+        "\n- How can I contact him?"+
+        "\n\n You can also make questions more detailed. More detail, better the answer.",
+
         isUserInput: false,
         messageSentOn: Date.now()
     }
@@ -191,9 +197,16 @@ const App = () => {
 
     return (
         <>
-            <h1>Hi, Dhiman here!<span className='hiHand'> 👋</span>
-            </h1>
-            <h3>I am a Full Stack Developer.</h3>
+
+            <img src={mascot} className='mascot'></img>
+                    
+            <div className="iconBar">
+            <img src={openaiIcon} className="topIcon"></img>
+            <img src={springIcon} className="topIcon"></img>
+            <img src={reactIcon} className="topIcon"></img>
+            </div>
+            
+            <div></div>
             <div className="chatWidget">
                 <div className="messageArea">
                     {

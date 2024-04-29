@@ -9,9 +9,14 @@ h1, h2, h3, h4, h5 {
   color: var(--heading-text);
 }
 
+.mascot{
+  height: 15em;
+  width: 15em;
+}
+
 .yourMessageBox{
   text-align: right;  
-  padding: 1em;
+  padding: 0.10em 1em 0.10em 1em;
   background-color: var(--primary-color);
   color: var(--dark-text);
   border-radius: 10px;
@@ -119,7 +124,7 @@ cursor: pointer;
     text-align: center;
     margin: 0.5em;
   }
-  .top-icon{
+  .topIcon{
     width: 2.25em;
     height: 2.25em;
     margin:0.25em;
