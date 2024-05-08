@@ -4,15 +4,15 @@ import Loader from './Loader/Loader'
 import axios from 'axios'
 import {v4 as uuidv4} from 'uuid';
 import Markdown from 'react-markdown'
-import mascot from './assets/mascot.png'
-import openaiIcon from './assets/openai-icon.svg'
-import reactIcon from './assets/reactjs-icon.svg'
-import springIcon from './assets/spring-icon.svg'
+import mascot from '/pics/mascot.png'
+import openaiIcon from '/icons/openai.svg'
+import reactIcon from '/icons/react.svg'
+import springIcon from '/icons/spring.svg'
 
-//const apiBaseUrl = "http://localhost:8080"
+const apiBaseUrl = "http://localhost:8080"
 //const apiBaseUrl = "http://127.0.0.1:5000";
 //const apiBaseUrl = "https://fhuzbqxjca.execute-api.ap-south-1.amazonaws.com";
-const apiBaseUrl = "https://spotty-plantation-production.up.railway.app";
+//const apiBaseUrl = "https://spotty-plantation-production.up.railway.app";
 const queryLimit = 3;
 const debugMode = false;
 interface Message {
@@ -197,7 +197,7 @@ const App = () => {
 
     return (
         <>
-
+            <div className="wrapper">
             <img src={mascot} className='mascot'></img>
                     
             <div className="iconBar">
@@ -226,7 +226,7 @@ const App = () => {
 
                 {(!loading && <div className="chatInput">
                 <div className='chatInputArea'>
-                        <textarea className="chatInputText" placeholder="Ask a question about me..."
+                        <textarea className="chatInputText" placeholder="Ask a question ..."
                             value={newMessageText}
                             onChange={
                                 event => setNewMessageText(event.target.value)
@@ -243,6 +243,7 @@ const App = () => {
                     </div>
                 </div>)} 
                 {(loading && <Loader></Loader>)}
+            </div>
             </div>
         </>
     )

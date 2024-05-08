@@ -1,0 +1,242 @@
+:root {
+    --text: #28536B;
+    --primary-background: #fff;
+    --secondary-background: #f1f1f1;
+    --top-bar-background: #fafafa;
+    --chat-section-background: #d6f7f2;
+    --chat-section-border: #bee3dd;
+    --border: #d1d1d1;
+    --primary-color: #09d3ac;
+    --primary-color-dark: #08be9a;
+
+  
+    font-family: Montserrat, 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--secondary-background);
+    color: var(--text);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  [data-theme="dark"] {
+        --text: #fff;
+        --primary-background: #152b38;
+        --secondary-background: #193444;
+        --top-bar-background: #1d3645;
+        --chat-section-background: #0d1922;
+        --chat-section-border: #375954;
+        --border: #355263;
+  }
+
+body {
+    background-color: var(--primary-background);
+    padding:0px;
+    margin:0px;
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+.primaryIcon{
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+section{
+    margin:0px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+}
+
+
+.topBar {
+    display: grid;
+    background-color: var(--top-bar-background);
+    grid-template-columns: 2fr 7fr 3fr; 
+    padding:1rem;
+}
+
+.socialMedia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+@media(min-width: 600px){
+    .socialMedia {
+        grid-template-columns: repeat(4, 1fr);   
+    }
+    .topBar {
+        grid-template-columns: 1fr 9fr 2fr; 
+    }
+}
+
+
+.mainSection {
+    background-color:var(--primary-background);
+    margin: 0% 10% 0% 10%;
+}
+
+.mainSection h1, h3 {
+    margin: 0em;
+}
+
+.mainImage {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.imageContainer{
+    text-align: center;
+    align-items: center;
+}
+
+.aboutMe{
+    display: grid;
+}
+
+@media(min-width: 700px){
+    .aboutMe{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.aboutMeText{
+    font-size: 1.25rem;
+}
+
+.skillIcons{
+    padding: 1rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+
+.skillIcons img {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: 1.25rem;
+}
+
+.chatIcon {
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.chatSection{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    background-color: var(--chat-section-background);
+    border: 1px solid var(--chat-section-border);
+    padding: 2.5% 5% 2.5% 5%;
+
+}
+
+.iconButton {
+    cursor: pointer;
+}
+
+.primaryButton {
+    background-color: var(--primary-color);
+    color: var(--primary-background);
+    padding: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-content: center;
+}
+
+.primaryButton:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.workEx{
+    background-color: var(--secondary-background);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2rem;
+}
+
+.work, .cetifications{
+    display: grid;
+    gap: 1rem;
+}
+
+.workCard{
+    background-color: var(--primary-background);
+    border-radius: 0.75rem;
+    border: 1px solid var(--border);
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+@media (min-width: 500px){
+    .workCard{
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+    }
+}
+
+.orgLogo{
+    width: 5rem;
+    display:block;
+}
+
+.orgLogoContainer{
+    text-align: center;
+    margin:auto;
+
+}
+
+.exp{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.expItem{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    text-align: left;
+}
+
+.workCard h4{
+    margin: 0;
+}
+
+footer{
+    background-color: var(--secondary-background);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

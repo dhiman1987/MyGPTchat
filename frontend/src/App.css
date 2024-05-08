@@ -1,25 +1,33 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
+  background-color: var(--secondary-background);
+}
+
+.wrapper{
+  background-color: var(--primary-background);
+  padding: 1em;
+  margin:auto;
+  max-width: 600px;
 }
 
 h1, h2, h3, h4, h5 {
-  color: var(--heading-text);
+  color: var(--text);
 }
 
 .mascot{
-  height: 15em;
-  width: 15em;
+  height: 10rem;
+  width: 10em;
 }
 
 .yourMessageBox{
   text-align: right;  
   padding: 0.10em 1em 0.10em 1em;
   background-color: var(--primary-color);
-  color: var(--dark-text);
+  color: var(--text);
   border-radius: 10px;
+  border: 1px solid var(--primary-color-dark);
   margin-bottom: 1em;
   margin-top: 1em;
   margin-left: 5em; 
@@ -29,13 +37,14 @@ h1, h2, h3, h4, h5 {
 .messageBox{
   text-align: left;
   padding: 1em;
-  background-color: var(--primary-background);
+  background-color: var(--secondary-background);
+  border: 1px solid var(--border);
   border-radius: 10px;
   margin: 1em;
 }
 
 .messageArea{
-  height:40em;
+  height:30em;
   overflow-x: scroll;
 }
 
@@ -78,7 +87,7 @@ margin: 0.25em;
 padding: 0.75em;
 border-radius: 5px;
 background-color: var(--primary-color);
-color: #fff;
+color: var(--primary-background);
 border:none;
 font-weight: bold;
 cursor: pointer;
@@ -92,15 +101,15 @@ cursor: pointer;
   margin: 0.25em;
   padding: 0.75em;
   border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: var(--secondary-background);
+  color: var(--text);
   border:none;
   font-weight: bold;
   cursor: pointer;
   }
 
   .secondaryButton:hover{
-    background-color: var(--secondary-color-dark);
+    background-color: var(--secondary-color);
   }
 
   .bulletClass::before {
@@ -113,7 +122,7 @@ cursor: pointer;
   }
 
   .iconBar{
-    color: var(--heading-text);
+    color: var(--text);
     margin: auto;
     margin-bottom: 1em;
     width: 50%;

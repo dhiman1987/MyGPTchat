@@ -1,42 +1,4 @@
-:root {
-  --heading-text: #28536B;
-  --text: #345669;
-  --dark-text: #28536B;
-  --primary-background: #fff;
-  --secondary-background: #efefef;
-  --border: #e4e4e4;
-  --primary-color: #41D3BD;
-  --primary-color-dark: #3ac2ad;
-  --secondary-color: #97acb7;
-  --secondary-color-dark: #6c7c84;
-
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  font-size: 14px;
-  font-weight: 400;
-  background-color: var(--secondary-background);
-  color: var(--text);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-@media (prefers-color-scheme: dark){
-  :root{
-    --heading-text: #fff;
-    --text: #bebdbd;
-    --dark-text: #28536B;
-    --primary-background: #0b181f;
-    --secondary-background: #193342;
-    --border: #2b3a43;
-    --primary-color: #41D3BD;
-    --primary-color-dark: #3ac2ad;
-    --secondary-color: #656565;
-    --secondary-color-dark: #505050;
-  }
-}
+@import "../home.css"
 
 
 
