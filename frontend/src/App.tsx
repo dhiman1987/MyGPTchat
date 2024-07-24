@@ -9,9 +9,9 @@ import openaiIcon from '/icons/openai.svg'
 import reactIcon from '/icons/react.svg'
 import springIcon from '/icons/spring.svg'
 
-const apiBaseUrl = "http://localhost:8080"
+//const apiBaseUrl = "http://localhost:8080"
 //const apiBaseUrl = "http://127.0.0.1:5000";
-//const apiBaseUrl = "https://fhuzbqxjca.execute-api.ap-south-1.amazonaws.com";
+ const apiBaseUrl = "https://jl5ilobbxj3qqyz6qgkq3azpaq0ilsyl.lambda-url.ap-south-1.on.aws";
 //const apiBaseUrl = "https://spotty-plantation-production.up.railway.app";
 const queryLimit = 3;
 const debugMode = false;
@@ -28,9 +28,7 @@ interface HistoryItem {
 }
 
 interface ChatInput {
-    messageText: String,
-    history: HistoryItem[]
-
+    messageText: String
 }
 
 const App = () => {
@@ -118,13 +116,16 @@ const App = () => {
             messageSentOn: Date.now()
         };
         const chatInput: ChatInput = {
-            messageText: chatQuery,
-            history: history
+            messageText: chatQuery
         };
         console.debug(chatInput);
         if (! debugMode) {
             try {
-                const data: any = await axios.post(apiBaseUrl + "/chat", chatInput);
+                const data: any = await axios.post(apiBaseUrl + "/chat", chatInput, {
+                    headers : {
+                        'spring.cloud.function.definition':'chat'
+                    }
+                });
                 messageResponse = data.data;
                 console.log(messageResponse);
             } catch (error:any) {
