@@ -11,7 +11,7 @@ import springIcon from '/icons/spring.svg'
 
 //const apiBaseUrl = "http://localhost:8080"
 //const apiBaseUrl = "http://127.0.0.1:5000";
- const apiBaseUrl = "https://jl5ilobbxj3qqyz6qgkq3azpaq0ilsyl.lambda-url.ap-south-1.on.aws";
+ const apiBaseUrl = "https://s63kisyt5uz6wvuyykhczndn3y0oitfi.lambda-url.ap-south-1.on.aws";
 //const apiBaseUrl = "https://spotty-plantation-production.up.railway.app";
 const queryLimit = 3;
 const debugMode = false;
